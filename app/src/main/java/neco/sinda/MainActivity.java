@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.StringDef;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -28,20 +29,21 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        new YoutubeLiveShow().execute("HD");
+        new YoutubeLiveShow().execute("A");
         new HttpGetTest().execute(Config.YOUTUBE_PLAYLIST);
 
         //我想爬山
     }
 
-    /*
-     ==================================================
-     Get Youtube LiveShow Stream key & Play
-     params = quality
-     HD / SD
-     ==================================================
-     */
+
+
+
+    /**
+     * Get Youtube LiveShow Stream key & Play
+     **/
     private class YoutubeLiveShow extends AsyncTask<String, Integer , String>{
+
+
         @Override
         protected String doInBackground(String... params) {
             String quality = params[0];
@@ -91,6 +93,9 @@ public class MainActivity extends Activity {
             MainActivity.this.finish();
         }
     }
+
+
+
 
     /*
      ==================================================
