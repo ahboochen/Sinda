@@ -30,6 +30,8 @@ public class MainActivity extends Activity {
 
 //        new YoutubeLiveShow().execute("HD");
         new HttpGetTest().execute(Config.YOUTUBE_PLAYLIST);
+
+        //我想爬山
     }
 
     /*
