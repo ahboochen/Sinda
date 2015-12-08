@@ -49,4 +49,7 @@ dependencies {
     compile files('C:/Users/ABC/Desktop/Android/Sinda/libs/jna-4.1.0.jar')
     compile files('C:/Users/ABC/Desktop/Android/Sinda/libs/jna-platform-4.1.0.jar')
     compile files('C:/Users/ABC/Desktop/Android/Sinda/libs/YouTubeAndroidPlayerApi.jar')
+    compile files('C:/Users/Ahboo/Desktop/Sinda/libs/YouTubeAndroidPlayerApi.jar')
+    compile files('C:/Users/Ahboo/Desktop/Sinda/libs/httpclient-4.5.1.jar')
+    compile files('C:/Users/Ahboo/Desktop/Sinda/libs/httpcore-4.4.3.jar')
 }
