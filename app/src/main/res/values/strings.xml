@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">信大電視台</string>
+    <string name="player_error">初始化Youtube Player錯誤</string>
+    <string name="playerview_text">This is a YouTubePlayerView!</string>
+    <string name="error_player">Error Player</string>
+</resources>
