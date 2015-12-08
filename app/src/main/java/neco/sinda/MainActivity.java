@@ -35,13 +35,11 @@ public class MainActivity extends Activity {
         //我想爬山
     }
 
-
-
-
     /**
-     * Get Youtube LiveShow Stream key & Play
-     **/
-    private class YoutubeLiveShow extends AsyncTask<String, Integer , String>{
+        * Get Youtube LiveShow Stream key & Play
+        * @execute quality HD/SD
+        *
+        **/    private class YoutubeLiveShow extends AsyncTask<String, Integer , String>{
 
 
         @Override
