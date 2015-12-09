@@ -36,10 +36,12 @@ public class MainActivity extends Activity {
     }
 
     /**
-        * Get Youtube LiveShow Stream key & Play
-        * @execute quality HD/SD
+        * Get Sinda Youtube LiveShow stream key & play on YoutubeActivity
+        * @execute quality
+        *       "HD" or "SD" stream quality
         *
-        **/    private class YoutubeLiveShow extends AsyncTask<String, Integer , String>{
+        **/
+    private class YoutubeLiveShow extends AsyncTask<String, Integer , String>{
 
 
         @Override
@@ -93,14 +95,11 @@ public class MainActivity extends Activity {
     }
 
 
-
-
-    /*
-     ==================================================
-     Get Youtube Video Items & ShowList
-     params = url
-     ==================================================
-     */
+    /**
+         *  Get Youtube PlayLists & show on ListActivity
+         *  @execute url
+         *      Youtube Channel PlayLists Url
+         */
     private class HttpGetTest extends AsyncTask<String, Integer , ArrayList> {
 
         @Override
@@ -166,26 +165,20 @@ public class MainActivity extends Activity {
         public String getId() {
             return id;
         }
-
         public void setId(String id) {
             this.id = id;
         }
-
         public String getImg() {
             return img;
         }
-
         public void setImg(String img) {
             this.img = img;
         }
-
         public String getTitle() {
             return title;
         }
-
         public void setTitle(String title) {
             this.title = title;
         }
-
     }
 }
